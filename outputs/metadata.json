@@ -1,0 +1,7 @@
+{
+  "policyengine_us": "1.775.8",
+  "dataset": "hf://datasets/policyengine/populace-us/populace_us_2024.h5@populace-us-2024-c86a631-6e1bcd0271a5-20260619T002242Z",
+  "year": 2026,
+  "generated": "2026-07-21",
+  "method": "per-tax-unit income_tax delta from zeroing non_sch_d_capital_gains"
+}

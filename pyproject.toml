@@ -1,0 +1,6 @@
+[project]
+name = "growth-act"
+version = "0.1.0"
+description = "GROWTH Act (H.R. 2089 / S. 1839) modeling groundwork: direct-route capital gain distributions by income class"
+requires-python = ">=3.13"
+dependencies = ["policyengine-us==1.775.8"]
