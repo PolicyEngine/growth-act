@@ -17,7 +17,7 @@ As of July 2026 the bill is in committee in both chambers with no JCT estimate a
 Fund capital gain distributions reach individual returns two mutually exclusive ways:
 
 1. **Direct route**: reported on Form 1040 with no Schedule D (PUF `E01100`; the `non_sch_d_capital_gains` variable in PolicyEngine US). This is what this repo measures.
-2. **Schedule D route**: line 13, folded into net long-term gains and not separable in any microdata. The SOI Sales of Capital Assets study (TY2015, the latest all-route accounting) put this route at roughly 6× the direct route — direct-route dollars were about 15% of the combined total. Splitting it out per income class is in progress at [populace#274](https://github.com/PolicyEngine/populace/issues/274); the deterministic national split shipped in [populace#282](https://github.com/PolicyEngine/populace/pull/282).
+2. **Schedule D route**: line 13, folded into net long-term gains and not separable in any microdata. The SOI Sales of Capital Assets study (TY2015, the latest all-route accounting) put this route at roughly 6× the direct route — direct-route dollars were about 15% of the combined total. Splitting it out per income class is in progress at [microcosm#274](https://github.com/PolicyEngine/microcosm/issues/274); the deterministic national split shipped in [microcosm#282](https://github.com/PolicyEngine/microcosm/pull/282).
 
 Engine groundwork: [policyengine-us#8839](https://github.com/PolicyEngine/policyengine-us/pull/8839) (direct-route distributions in gross income, net capital gain, and net investment income) and [policyengine-us#8850](https://github.com/PolicyEngine/policyengine-us/pull/8850) (Schedule D route memo variable).
 
@@ -52,7 +52,7 @@ What the table shows:
 
 ## Data note
 
-Computed on the policyengine-us 1.775.8 pinned default dataset (Populace US 2024, revision `populace-us-2024-c86a631-…-20260619`), where the direct-route base matches SOI Pub 1304 Table 1.4 concepts. Do not rerun on the unpinned HF-latest Populace artifact until [populace#462](https://github.com/PolicyEngine/populace/issues/462) is resolved — that release carries a known defect inflating `non_sch_d_capital_gains` roughly 7×.
+Computed on the policyengine-us 1.775.8 pinned default dataset (Microcosm US 2024, revision `populace-us-2024-c86a631-…-20260619`), where the direct-route base matches SOI Pub 1304 Table 1.4 concepts. Do not rerun on the unpinned HF-latest Microcosm artifact until [microcosm#462](https://github.com/PolicyEngine/microcosm/issues/462) is resolved — that release carries a known defect inflating `non_sch_d_capital_gains` roughly 7×.
 
 ## Reproduce
 
